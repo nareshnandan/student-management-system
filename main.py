@@ -4,12 +4,18 @@ class StudentManagement:
 
     def __init__(self):
         self.file_name = "students.json"
+        self.students = self.load_data()
 
     def load_data(self):
-        pass
+        try:
+            with open(self.file_name,"r") as file:
+                return json.load(file)
+        except:
+            return{}
 
     def save_data(self):
-        pass
+        with open(self.file_name, "w") as file:
+            json.dump(self.students, file, indent=4)
 
     def add_student(self):
         pass
