@@ -34,3 +34,4 @@ class StudentManagement:
 
 student = StudentManagement()
 student.main_menu()
+
