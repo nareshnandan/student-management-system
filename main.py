@@ -36,7 +36,45 @@ class StudentManagement:
         pass
 
     def main_menu(self):
-        pass
+        while True:
+
+            print("\n===== STUDENT MANAGEMENT SYSTEM =====")
+
+            print("1. Add Student")
+            print("2. Search Student")
+            print("3. Update Student")
+            print("4. Delete Student")
+            print("5. View Student")
+            print("6. View All Students")
+            print("7. Exit")
+
+            choice = input("Enter Choice : ")
+
+            if choice == "1":
+                self.add_student()
+
+            elif choice == "2":
+                self.search_student()
+
+            elif choice == "3":
+                self.update_student()
+
+            elif choice == "4":
+                self.delete_student()
+
+            elif choice == "5":
+                self.view_student()
+
+            elif choice == "6":
+                self.view_all_students()
+
+            elif choice == "7":
+                print("Thank You!")
+                break
+
+            else:
+                print("Invalid Choice!")
+
 
 student = StudentManagement()
 student.main_menu()
