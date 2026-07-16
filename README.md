@@ -140,7 +140,7 @@ This project helps beginners understand:
 
 ## 👨‍💻 Author
 
-**Naresh Nandan**
+**D Naresh**
 
 GitHub: https://github.com/nareshnandan
 
